@@ -60,6 +60,30 @@ export default function ParcoursPage() {
           Formation et expérience professionnelle
         </motion.p>
 
+        {/* Projet Professionnel */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.25 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold mb-8 text-primary-300">🎯 Projet Professionnel</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            whileHover={{ y: -5 }}
+            className="bg-gradient-to-r from-primary-600/20 to-blue-600/20 rounded-lg p-8 border border-primary-500/30 backdrop-blur-sm"
+          >
+            <h3 className="text-2xl font-semibold text-primary-300 mb-4">
+              Administration Systèmes et Réseaux
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Actuellement étudiant en BTS SIO, je me forme aux métiers du support et de l'informatique d'entreprise. Dans la continuité de ce parcours, je souhaite m'orienter vers l'administration systèmes et réseaux.
+            </p>
+          </motion.div>
+        </motion.div>
+
         {/* Expériences */}
         <motion.div 
           initial={{ opacity: 0 }}

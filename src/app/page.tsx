@@ -58,34 +58,7 @@ export default function Home() {
             className="text-sm md:text-base lg:text-lg mb-12 text-gray-200"
           >
           </motion.p>
-          <motion.div
-            variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
-          >
-            <motion.div
-              whileHover={{ scale: 1.05, y: -3 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Link
-                href="/portfolio"
-                className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 md:px-8 py-3 rounded-lg transition-all font-semibold shadow-lg hover:shadow-xl"
-              >
-                Mes Projets
-              </Link>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05, y: -3 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Link
-                href="/contact"
-                className="bg-gray-800/50 backdrop-blur-sm text-primary-400 border border-primary-500/50 px-6 md:px-8 py-3 rounded-lg hover:bg-gray-700 hover:border-primary-400 transition-all font-semibold"
-              >
-                Me Contacter
-              </Link>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+                  </motion.div>
 
         {/* Bloc de présentation */}
         <motion.div

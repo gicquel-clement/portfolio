@@ -53,6 +53,7 @@ export default function CVPage() {
           </motion.a>
         </motion.div>
 
+
         {/* Résumé Professionnel */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
