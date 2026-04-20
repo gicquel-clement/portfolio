@@ -34,7 +34,7 @@ const AboutPage = () => {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-4xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent"
+          className="text-4xl md:text-5xl font-bold mb-4 text-transparent"
         >
           À propos de moi
         </motion.h1>

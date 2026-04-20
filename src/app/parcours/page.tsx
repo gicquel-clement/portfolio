@@ -47,7 +47,7 @@ export default function ParcoursPage() {
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-primary-400 via-primary-500 to-blue-600 bg-clip-text text-transparent"
+          className="text-4xl sm:text-5xl font-bold mb-4 text-white"
         >
           Mon Parcours
         </motion.h1>
@@ -55,7 +55,7 @@ export default function ParcoursPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1 }}
-          className="text-lg text-gray-300 mb-16"
+          className="text-lg text-white mb-16"
         >
           Formation et expérience professionnelle
         </motion.p>
@@ -67,18 +67,18 @@ export default function ParcoursPage() {
           transition={{ delay: 0.25 }}
           className="mb-16"
         >
-          <h2 className="text-3xl font-bold mb-8 text-primary-300">🎯 Projet Professionnel</h2>
+          <h2 className="text-3xl font-bold mb-8 text-white">🎯 Projet Professionnel</h2>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             whileHover={{ y: -5 }}
-            className="bg-gradient-to-r from-primary-600/20 to-blue-600/20 rounded-lg p-8 border border-primary-500/30 backdrop-blur-sm"
+            className="bg-gradient-to-r from-slate-600/20 to-slate-700/20 rounded-lg p-8 border border-slate-500/30 backdrop-blur-sm"
           >
-            <h3 className="text-2xl font-semibold text-primary-300 mb-4">
+            <h3 className="text-2xl font-semibold text-white mb-4">
               Administration Systèmes et Réseaux
             </h3>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-white leading-relaxed">
               Actuellement étudiant en BTS SIO, je me forme aux métiers du support et de l'informatique d'entreprise. Dans la continuité de ce parcours, je souhaite m'orienter vers l'administration systèmes et réseaux.
             </p>
           </motion.div>
@@ -91,7 +91,7 @@ export default function ParcoursPage() {
           transition={{ delay: 0.2 }}
           className="mb-16"
         >
-          <h2 className="text-3xl font-bold mb-8 text-primary-300">👨‍💼 Expérience Professionnelle</h2>
+          <h2 className="text-3xl font-bold mb-8 text-white">👨‍💼 Expérience Professionnelle</h2>
 
           <div className="space-y-6">
             {experiences.map((exp, index) => (
@@ -101,25 +101,25 @@ export default function ParcoursPage() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ x: 10 }}
-                className="bg-gradient-to-r from-slate-800/50 to-slate-900/50 rounded-lg p-6 border-l-4 border-primary-500 backdrop-blur-sm hover:bg-gradient-to-r hover:from-slate-800/70 hover:to-slate-900/70 transition-all duration-300"
+                className="bg-gradient-to-r from-slate-800/50 to-slate-900/50 rounded-lg p-6 border-l-4 border-violet-500 backdrop-blur-sm hover:bg-gradient-to-r hover:from-slate-800/70 hover:text-white/70 transition-all duration-300"
               >
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                   <div>
-                    <h3 className="text-2xl font-semibold text-primary-300">
+                    <h3 className="text-2xl font-semibold text-white">
                       {exp.title}
                     </h3>
-                    <p className="text-primary-400 font-medium">{exp.company}</p>
+                    <p className="text-violet-400 font-medium">{exp.company}</p>
                   </div>
-                  <p className="text-sm text-gray-400 mt-2 sm:mt-0">{exp.year}</p>
+                  <p className="text-sm text-white mt-2 sm:mt-0">{exp.year}</p>
                 </div>
-                <p className="text-gray-300 mb-4">{exp.description}</p>
+                <p className="text-white mb-4">{exp.description}</p>
                 <ul className="space-y-2 ml-4">
                   {exp.tasks.map((task, idx) => (
                     <li
                       key={idx}
-                      className="text-gray-400 flex items-start"
+                      className="text-white flex items-start"
                     >
-                      <span className="text-primary-400 mr-3 mt-1">▸</span>
+                      <span className="text-violet-400 mr-3 mt-1">▸</span>
                       <span>{task}</span>
                     </li>
                   ))}
@@ -135,7 +135,7 @@ export default function ParcoursPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          <h2 className="text-3xl font-bold mb-8 text-primary-300">🎓 Formation</h2>
+          <h2 className="text-3xl font-bold mb-8 text-white">🎓 Formation</h2>
 
           <div className="space-y-6">
             {formations.map((formation, index) => (
@@ -145,23 +145,23 @@ export default function ParcoursPage() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: (index + experiences.length) * 0.1 }}
                 whileHover={{ x: 10 }}
-                className="bg-gradient-to-r from-slate-800/50 to-slate-900/50 rounded-lg p-6 border-l-4 border-primary-400 backdrop-blur-sm hover:bg-gradient-to-r hover:from-slate-800/70 hover:to-slate-900/70 transition-all duration-300"
+                className="bg-gradient-to-r from-slate-800/50 to-slate-900/50 rounded-lg p-6 border-l-4 border-violet-400 backdrop-blur-sm hover:bg-gradient-to-r hover:from-slate-800/70 hover:text-white/70 transition-all duration-300"
               >
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                   <div>
-                    <h3 className="text-2xl font-semibold text-primary-300">
+                    <h3 className="text-2xl font-semibold text-white">
                       {formation.title}
                     </h3>
-                    <p className="text-primary-400 font-medium">{formation.institution}</p>
+                    <p className="text-violet-400 font-medium">{formation.institution}</p>
                   </div>
                   <div className="flex gap-2 mt-2 sm:mt-0">
-                    <p className="text-sm text-gray-400">{formation.year}</p>
-                    <span className="text-xs bg-primary-500/20 text-primary-300 px-3 py-1 rounded-full">
+                    <p className="text-sm text-white">{formation.year}</p>
+                    <span className="text-xs bg-primary-500/20 text-white px-3 py-1 rounded-full">
                       {formation.status}
                     </span>
                   </div>
                 </div>
-                <p className="text-gray-300">{formation.description}</p>
+                <p className="text-white">{formation.description}</p>
               </motion.div>
             ))}
           </div>

@@ -33,7 +33,7 @@ export default function CompetencesPage() {
     {
       category: 'Automatisation & Documentation',
       icon: '⚙️',
-      color: 'from-cyan-500 to-blue-600',
+      color: 'from-violet-500 to-violet-600',
       skills: [
         'PowerShell (audit, automatisation, scripts)',
         'Rédaction de procédures techniques',
@@ -90,10 +90,10 @@ export default function CompetencesPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
             Mes Compétences
           </h1>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-white">
             Expertise technique en gestion d'infrastructure IT et support utilisateurs
           </p>
         </motion.div>
@@ -119,17 +119,17 @@ export default function CompetencesPage() {
               <div className={`absolute inset-0 bg-gradient-to-br ${comp.color} opacity-0 group-hover:opacity-10 rounded-2xl blur-xl transition-all duration-300`} />
               
               {/* Card */}
-              <div className="relative bg-slate-800/40 backdrop-blur-md rounded-2xl p-8 border border-slate-700/50 group-hover:border-primary-500/50 transition-all duration-300 h-full">
+              <div className="relative bg-slate-800/40 backdrop-blur-md rounded-2xl p-8 border border-violet-400/50 group-hover:border-violet-500/50 transition-all duration-300 h-full">
                 
                 {/* Icône et Titre */}
                 <div className="flex items-start gap-4 mb-6">
                   <motion.div
                     whileHover={{ rotate: 10, scale: 1.1 }}
-                    className="text-4xl p-3 rounded-xl bg-slate-700/50 group-hover:bg-slate-700 transition-all"
+                    className="text-4xl p-3 rounded-xl bg-slate-700/50 group-hover:bg-violet-700 transition-all"
                   >
                     {comp.icon}
                   </motion.div>
-                  <h2 className="text-xl font-bold text-white pt-1 group-hover:text-primary-300 transition-colors">
+                  <h2 className="text-xl font-bold text-white pt-1 group-hover:text-violet-400 transition-colors">
                     {comp.category}
                   </h2>
                 </div>
@@ -152,11 +152,11 @@ export default function CompetencesPage() {
                         whileHover={{ scale: 1.2 }}
                         className="mt-1 flex-shrink-0"
                       >
-                        <svg className="w-5 h-5 text-primary-400 group-hover/item:text-primary-300 transition-colors" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-5 h-5 text-violet-400 group-hover/item:text-white transition-colors" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </motion.div>
-                      <span className="text-gray-300 group-hover/item:text-gray-100 transition-colors leading-relaxed">
+                      <span className="text-white group-hover/item:text-white transition-colors leading-relaxed">
                         {skill}
                       </span>
                     </motion.li>
@@ -177,19 +177,19 @@ export default function CompetencesPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <p className="text-3xl font-bold text-primary-400">4</p>
-              <p className="text-gray-400 text-sm mt-1">Catégories</p>
+              <p className="text-white text-sm mt-1">Catégories</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary-400">20+</p>
-              <p className="text-gray-400 text-sm mt-1">Compétences</p>
+              <p className="text-white text-sm mt-1">Compétences</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary-400">18m</p>
-              <p className="text-gray-400 text-sm mt-1">Expérience</p>
+              <p className="text-white text-sm mt-1">Expérience</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary-400">∞</p>
-              <p className="text-gray-400 text-sm mt-1">Apprentissage</p>
+              <p className="text-white text-sm mt-1">Apprentissage</p>
             </div>
           </div>
         </motion.div>

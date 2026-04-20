@@ -44,7 +44,7 @@ export default function Navigation() {
 
   return (
     <motion.nav 
-      className="fixed top-0 w-full bg-transparent z-50"
+      className="fixed top-0 w-full bg-accent-900/80 backdrop-blur-md z-50 border-b border-electric-500/20"
       animate={{ y: isVisible ? 0 : -100 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
     >
@@ -53,7 +53,7 @@ export default function Navigation() {
           <div className="flex items-center gap-8">
             <Link href="/" className="flex-shrink-0 flex items-center group">
               <motion.span 
-                className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent group-hover:from-primary-300 group-hover:to-primary-500 transition-all"
+                className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent group-hover:from-electric-400 group-hover:to-electric-600 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -74,8 +74,8 @@ export default function Navigation() {
                   href={link.href}
                   className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 border ${
                     isActive(link.href)
-                      ? 'text-primary-400 bg-gradient-to-r from-primary-500/20 to-primary-600/20 border-primary-500/50'
-                      : 'text-gray-300 bg-gradient-to-r from-gray-800/30 to-gray-900/30 border-primary-500/20 hover:text-primary-400 hover:border-primary-500/40'
+                      ? 'text-electric-400 bg-gradient-to-r from-electric-500/20 to-electric-600/20 border-electric-500/50'
+                      : 'text-gray-300 bg-gradient-to-r from-gray-800/30 to-gray-900/30 border-primary-500/20 hover:text-electric-400 hover:border-electric-500/40'
                   }`}
                 >
                   {link.label}
@@ -88,7 +88,7 @@ export default function Navigation() {
           <div className="md:hidden flex items-center">
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-300 hover:text-primary-400 hover:bg-gray-800 transition-colors"
+              className="p-2 rounded-md text-gray-300 hover:text-electric-400 hover:bg-gray-800 transition-colors"
               aria-label="Toggle menu"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -123,8 +123,8 @@ export default function Navigation() {
                 href={link.href}
                 className={`block px-3 py-2 rounded-md font-medium transition-all duration-300 ${
                   isActive(link.href)
-                    ? 'bg-primary-500/20 text-primary-400 border-l-2 border-primary-500'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-primary-400'
+                    ? 'bg-electric-500/20 text-electric-400 border-l-2 border-electric-500'
+                    : 'text-gray-300 hover:bg-gray-700 hover:text-electric-400'
                 }`}
                 onClick={() => setIsOpen(false)}
               >

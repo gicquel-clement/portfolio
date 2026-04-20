@@ -48,14 +48,14 @@ export default function Home() {
 
           <motion.h1
             variants={itemVariants}
-            className="text-3xl md:text-5xl lg:text-7xl font-bold mb-12 bg-gradient-to-r from-primary-400 via-primary-500 to-blue-600 bg-clip-text text-transparent leading-relaxed"
+            className="text-3xl md:text-5xl lg:text-7xl font-bold mb-12 bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent leading-relaxed"
             whileHover={{ scale: 1.02 }}
           >
             Portfolio Gicquel Clément
           </motion.h1>
           <motion.p
             variants={itemVariants}
-            className="text-sm md:text-base lg:text-lg mb-12 text-gray-200"
+            className="text-sm md:text-base lg:text-lg mb-12 text-white"
           >
           </motion.p>
                   </motion.div>
@@ -66,8 +66,8 @@ export default function Home() {
           initial="hidden"
           animate="visible"
           transition={{ delay: 0.3 }}
-          whileHover={{ borderColor: 'rgb(11, 165, 255)', boxShadow: '0 0 30px rgba(11, 165, 255, 0.3)' }}
-          className="w-full max-w-4xl mb-24 bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-md border border-primary-500/20 rounded-2xl p-8 md:p-12 shadow-2xl transition-all duration-300"
+          whileHover={{ borderColor: 'rgb(66, 99, 194)', boxShadow: '0 0 30px rgba(66, 99, 194, 0.3)' }}
+          className="w-full max-w-4xl mb-24 bg-gradient-to-br from-blue-800/40 to-blue-900/40 backdrop-blur-md border border-blue-500/20 rounded-2xl p-8 md:p-12 shadow-2xl transition-all duration-300"
         >
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <motion.div
@@ -77,19 +77,19 @@ export default function Home() {
               transition={{ delay: 0.4, duration: 0.6 }}
             >
               <motion.h2
-                className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-primary-300 to-primary-500 bg-clip-text text-transparent"
+                className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-green-300 to-green-500 bg-clip-text text-transparent"
                 whileHover={{ scale: 1.05 }}
               >
                 Qui suis-je ?
               </motion.h2>
               <motion.p
-                className="text-gray-300 text-base md:text-lg leading-relaxed mb-4"
+                className="text-white text-base md:text-lg leading-relaxed mb-4"
                 variants={itemVariants}
               >
-                Je suis <span className="font-semibold text-primary-300">Gicquel Clément</span>, technicien informatique en alternance chez Panpharma. Avec une approche professionnelle et rigoureuse, je participe activement aux opérations IT de l'entreprise.
+                Je suis <span className="font-semibold text-white">Gicquel Clément</span>, technicien informatique en alternance chez Panpharma. Avec une approche professionnelle et rigoureuse, je participe activement aux opérations IT de l'entreprise.
               </motion.p>
               <motion.p
-                className="text-gray-300 text-base md:text-lg leading-relaxed mb-6"
+                className="text-white text-base md:text-lg leading-relaxed mb-6"
                 variants={itemVariants}
               >
                 Ma passion pour l'informatique me pousse à développer mes compétences techniques tout en garantissant la fiabilité, la sécurité et la continuité de service.
@@ -103,23 +103,23 @@ export default function Home() {
                 <motion.div
                   variants={itemVariants}
                   whileHover={{ scale: 1.05, y: -2 }}
-                  className="px-4 py-2 bg-gradient-to-r from-primary-500/30 to-primary-600/30 border border-primary-500/60 rounded-lg hover:border-primary-400 transition-all cursor-default"
+                  className="px-4 py-2 bg-gradient-to-r from-electric-500/30 to-electric-600/30 border border-electric-500/60 rounded-lg hover:border-violet-400 transition-all cursor-default"
                 >
-                  <span className="text-primary-200 font-semibold text-sm">💼 Alternance Panpharma</span>
+                  <span className="text-electric-200 font-semibold text-sm">💼 Alternance Panpharma</span>
                 </motion.div>
                 <motion.div
                   variants={itemVariants}
                   whileHover={{ scale: 1.05, y: -2 }}
-                  className="px-4 py-2 bg-gradient-to-r from-primary-500/30 to-primary-600/30 border border-primary-500/60 rounded-lg hover:border-primary-400 transition-all cursor-default"
+                  className="px-4 py-2 bg-gradient-to-r from-electric-500/30 to-electric-600/30 border border-electric-500/60 rounded-lg hover:border-violet-400 transition-all cursor-default"
                 >
-                  <span className="text-primary-200 font-semibold text-sm">🔧 Technicien IT</span>
+                  <span className="text-electric-200 font-semibold text-sm">🔧 Technicien IT</span>
                 </motion.div>
                 <motion.div
                   variants={itemVariants}
                   whileHover={{ scale: 1.05, y: -2 }}
-                  className="px-4 py-2 bg-gradient-to-r from-primary-500/30 to-primary-600/30 border border-primary-500/60 rounded-lg hover:border-primary-400 transition-all cursor-default"
+                  className="px-4 py-2 bg-gradient-to-r from-electric-500/30 to-electric-600/30 border border-electric-500/60 rounded-lg hover:border-violet-400 transition-all cursor-default"
                 >
-                  <span className="text-primary-200 font-semibold text-sm">🛡️ Sécurité & Support</span>
+                  <span className="text-electric-200 font-semibold text-sm">🛡️ Sécurité & Support</span>
                 </motion.div>
               </motion.div>
             </motion.div>
@@ -133,7 +133,7 @@ export default function Home() {
                 animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                 whileHover={{ scale: 1.1, rotate: 5 }}
-                className="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-primary-500/40 to-primary-700/40 border border-primary-500/50 flex items-center justify-center shadow-xl"
+                className="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-slate-600/20 to-slate-700/20 border border-slate-500/50 flex items-center justify-center shadow-xl"
               >
                 <div className="text-6xl md:text-7xl">👤</div>
               </motion.div>
@@ -153,25 +153,25 @@ export default function Home() {
               variants={itemVariants}
               whileHover={{ 
                 y: -10,
-                boxShadow: '0 20px 40px rgba(11, 165, 255, 0.3)',
-                borderColor: 'rgb(11, 165, 255)'
+                boxShadow: '0 20px 40px rgba(168, 85, 247, 0.3)',
+                borderColor: 'rgb(168, 85, 247)'
               }}
-              className="p-5 md:p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 shadow-lg border border-primary-500/30 hover:border-primary-500/60 transition-all duration-300 backdrop-blur-sm"
+              className="p-5 md:p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 shadow-lg border border-slate-500/30 hover:border-electric-500/60 transition-all duration-300 backdrop-blur-sm"
             >
               <motion.div
                 whileHover={{ scale: 1.2, rotate: 10 }}
               >
-                <skill.icon className="w-10 h-10 md:w-12 md:h-12 text-primary-400 mb-4" />
+                <skill.icon className="w-10 h-10 md:w-12 md:h-12 text-electric-400 mb-4" />
               </motion.div>
               <motion.h3
-                className="text-lg md:text-xl font-semibold mb-3 text-white group-hover:text-primary-300"
+                className="text-lg md:text-xl font-semibold mb-3 text-white group-hover:text-electric-300"
                 whileHover={{ x: 5 }}
               >
                 {skill.title}
               </motion.h3>
-              <p className="text-sm md:text-base text-gray-300 mb-4">{skill.description}</p>
+              <p className="text-sm md:text-base text-white mb-4">{skill.description}</p>
               <motion.ul
-                className="text-xs md:text-sm text-gray-400 space-y-2"
+                className="text-xs md:text-sm text-white space-y-2"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
@@ -180,9 +180,9 @@ export default function Home() {
                   <motion.li
                     key={i}
                     variants={itemVariants}
-                    className="flex items-center hover:text-primary-300 transition-colors"
+                    className="flex items-center hover:text-electric-300 transition-colors"
                   >
-                    <svg className="w-4 h-4 text-primary-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-4 h-4 text-electric-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="leading-relaxed">{tech}</span>

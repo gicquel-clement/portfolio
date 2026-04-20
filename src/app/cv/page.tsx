@@ -15,7 +15,7 @@ export default function CVPage() {
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-primary-400 via-primary-500 to-blue-600 bg-clip-text text-transparent"
+          className="text-4xl sm:text-5xl font-bold mb-4 text-white"
         >
           Mon CV
         </motion.h1>
@@ -23,7 +23,7 @@ export default function CVPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1 }}
-          className="text-lg text-gray-300 mb-8"
+          className="text-lg text-white mb-8"
         >
           Téléchargez ou consultez mon curriculum vitae
         </motion.p>
@@ -33,10 +33,10 @@ export default function CVPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="bg-gradient-to-r from-primary-600/20 to-blue-600/20 rounded-lg p-8 border border-primary-500/30 mb-12 backdrop-blur-sm"
+          className="bg-gradient-to-r from-slate-600/20 to-slate-700/20 rounded-lg p-8 border border-slate-500/30 mb-12 backdrop-blur-sm"
         >
-          <h2 className="text-2xl font-semibold mb-4 text-primary-300">📥 Télécharger mon CV</h2>
-          <p className="text-gray-300 mb-6">
+          <h2 className="text-2xl font-semibold mb-4 text-electric-300">📥 Télécharger mon CV</h2>
+          <p className="text-white mb-6">
             Vous pouvez télécharger mon CV en format PDF pour consultation offline ou impression.
           </p>
           <motion.a
@@ -61,19 +61,19 @@ export default function CVPage() {
           transition={{ delay: 0.3 }}
           className="mb-12"
         >
-          <h2 className="text-3xl font-bold mb-6 text-primary-300">👤 Résumé Professionnel</h2>
-          <div className="bg-slate-800/50 rounded-lg p-6 border border-primary-500/20 backdrop-blur-sm">
-            <p className="text-gray-300 leading-relaxed">
+          <h2 className="text-3xl font-bold mb-6 text-electric-300">👤 Résumé Professionnel</h2>
+          <div className="bg-slate-800/50 rounded-lg p-6 border border-electric-500/20 backdrop-blur-sm">
+            <p className="text-white leading-relaxed">
               <strong>Poste :</strong> Technicien informatique en alternance<br />
               <strong>Entreprise :</strong> Panpharma (DSI / Infrastructure, secteur pharmaceutique, ~600 collaborateurs, international)<br />
               <strong>Période :</strong> Depuis octobre 2024<br />
               <strong>Environnement :</strong> Exigences élevées en sécurité, conformité et continuité de service
             </p>
-            <p className="text-gray-300 leading-relaxed mt-4">
+            <p className="text-white leading-relaxed mt-4">
               <strong>Missions principales :</strong><br />
               Support utilisateurs via outil de ticketing, administration de postes Windows (10/11), gestion du parc informatique (PC, smartphones, imprimantes), déploiement et configuration via Microsoft Intune & Autopilot, administration Active Directory / Entra ID (Azure AD), gestion des identités et accès, sécurisation des postes (BitLocker, EDR, conformité), rédaction de procédures techniques, audits via PowerShell, et participation à des projets techniques transverses.
             </p>
-            <p className="text-gray-300 leading-relaxed mt-4">
+            <p className="text-white leading-relaxed mt-4">
               <strong>Compétences développées :</strong> Gestion de parc, sécurité, automatisation, documentation, support N1/N2, priorisation, communication, rigueur et traçabilité.
             </p>
           </div>
@@ -86,36 +86,36 @@ export default function CVPage() {
           transition={{ delay: 0.4 }}
           className="mb-12"
         >
-          <h2 className="text-3xl font-bold mb-6 text-primary-300">📞 Coordonnées</h2>
+          <h2 className="text-3xl font-bold mb-6 text-electric-300"> Coordonnées</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <motion.div
               whileHover={{ x: 5 }}
-              className="bg-slate-800/50 rounded-lg p-4 border border-primary-500/20 backdrop-blur-sm"
+              className="bg-slate-800/50 rounded-lg p-4 border border-electric-500/20 backdrop-blur-sm"
             >
-              <h3 className="font-semibold text-primary-400 mb-2">Email</h3>
-              <a href="mailto:clementgicquel24@gmail.com" className="text-gray-300 hover:text-primary-400 transition-colors">
+              <h3 className="font-semibold text-white mb-2">Email</h3>
+              <a href="mailto:clementgicquel24@gmail.com" className="text-white hover:text-electric-400 transition-colors">
                 clementgicquel24@gmail.com
               </a>
             </motion.div>
             <motion.div
               whileHover={{ x: 5 }}
-              className="bg-slate-800/50 rounded-lg p-4 border border-primary-500/20 backdrop-blur-sm"
+              className="bg-slate-800/50 rounded-lg p-4 border border-electric-500/20 backdrop-blur-sm"
             >
-              <h3 className="font-semibold text-primary-400 mb-2">Téléphone</h3>
-              <p className="text-gray-300">
+              <h3 className="font-semibold text-white mb-2">Téléphone</h3>
+              <p className="text-white">
                 Sur demande
               </p>
             </motion.div>
             <motion.div
               whileHover={{ x: 5 }}
-              className="bg-slate-800/50 rounded-lg p-4 border border-primary-500/20 backdrop-blur-sm"
+              className="bg-slate-800/50 rounded-lg p-4 border border-electric-500/20 backdrop-blur-sm"
             >
-              <h3 className="font-semibold text-primary-400 mb-2">LinkedIn</h3>
+              <h3 className="font-semibold text-white mb-2">LinkedIn</h3>
               <a 
                 href="https://www.linkedin.com/in/clement-gicquel5635" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-primary-400 transition-colors flex items-center gap-2"
+                className="text-white hover:text-electric-400 transition-colors flex items-center gap-2"
               >
                 clement-gicquel5635
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -125,10 +125,10 @@ export default function CVPage() {
             </motion.div>
             <motion.div
               whileHover={{ x: 5 }}
-              className="bg-slate-800/50 rounded-lg p-4 border border-primary-500/20 backdrop-blur-sm"
+              className="bg-slate-800/50 rounded-lg p-4 border border-electric-500/20 backdrop-blur-sm"
             >
-              <h3 className="font-semibold text-primary-400 mb-2">Localisation</h3>
-              <p className="text-gray-300">Bretagne, France</p>
+              <h3 className="font-semibold text-white mb-2">Localisation</h3>
+              <p className="text-white">Bretagne, France</p>
             </motion.div>
           </div>
         </motion.section>
@@ -140,12 +140,12 @@ export default function CVPage() {
           transition={{ delay: 0.5 }}
           className="text-center"
         >
-          <p className="text-gray-400 mb-4">Vous pouvez aussi consulter mon parcours détaillé :</p>
+          <p className="text-white mb-4">Vous pouvez aussi consulter mon parcours détaillé :</p>
           <Link href="/parcours">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary-500/20 hover:bg-primary-500/30 text-primary-400 border border-primary-500/50 font-semibold py-2 px-6 rounded-lg transition-colors duration-300"
+              className="bg-electric-500/20 hover:bg-electric-500/30 text-electric-400 border border-electric-500/50 font-semibold py-2 px-6 rounded-lg transition-colors duration-300"
             >
               Voir mon Parcours
             </motion.button>
